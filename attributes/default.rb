@@ -31,7 +31,7 @@ default['openssh']['package_name'] = case node['platform_family']
                                      end
 
 default['openssh']['service_name'] = case node['platform_family']
-                                     when "rhel", "fedora","suse"
+                                     when "rhel", "fedora","suse", "gentoo"
                                        "sshd"
                                      else
                                        "ssh"
